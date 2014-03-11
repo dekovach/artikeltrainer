@@ -1,0 +1,8 @@
+content     artikeltrainer    chrome/content/ contentaccessible=yes
+skin      artikeltrainer   classic/1.0   chrome/skin/
+
+# CSS for Toolbar Button
+style chrome://global/content/customizeToolbar.xul chrome://artikeltrainer/skin/overlay.css
+
+overlay chrome://browser/content/browser.xul chrome://artikeltrainer/content/at-overlay.xul
+overlay	chrome://navigator/content/navigator.xul	chrome://artikeltrainer/content/at-overlay.xul

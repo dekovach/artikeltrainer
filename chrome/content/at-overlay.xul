@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://artikeltrainer/skin/overlay.css" type="text/css"?>
+<overlay id="sample" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		 <script id="AT-Script" type="application/javascript" src="chrome://artikeltrainer/content/overlay.js"/>
+	
+	<broadcasterset id="mainBroadcasterSet"> 
+		<broadcaster id="bc_at_check_answers" style="color: red"/>
+	</broadcasterset>
+	
+	<commandset>
+		<command id="cmd_at_check_answers" oncommand="AT.Main.checkAnswers(event); event.stopPropagation();" disabled="true" />	 
+		<command id="test123" oncommand="alert('test123');" />
+	</commandset>
+	 
+	<keyset  id="mainKeyset">
+		<key id="key_atCheckAnswers" 
+			 key="A" 
+			 modifiers="alt,accel" command="cmd_at_check_answers"/>
+         
+	</keyset>
+	 
+	<toolbarpalette id="BrowserToolbarPalette">
+	
+			<toolbarbutton id="at-button" class="artikeltrainer-win-button chromeclass-toolbar-additional" type="menu-button"   
+					label="Artikel Trainer" tooltiptext="Click here to toggle Artikel Trainer" 
+					oncommand="AT.Bookmarklet.ToggleBookmarklet();">
+			
+				<menupopup onpopupshowing="" id="">
+					<menuitem id="at-check-answers"  label="Check Answers" class="menuitem-iconic check-answers" tooltiptext="" accesskey="t" command="cmd_at_check_answers" key="key_atCheckAnswers" >
+						
+					</menuitem>
+					<!--menuitem id="at-help" label="Help" class="menuitem-iconic" tooltiptext="Help" oncommand="event.stopPropagation();" >
+						
+					</menuitem-->
+				</menupopup>
+			</toolbarbutton>
+
+	</toolbarpalette>
+	
+</overlay>

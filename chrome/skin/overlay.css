@@ -1,0 +1,67 @@
+﻿/* FIREFOX 3.6 */
+.artikeltrainer-win-button-unchecked {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png");
+}
+
+
+/*toolbar[iconsize="small"] .win-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png");
+}
+*/
+
+.artikeltrainer-win-button-checked, toolbarbutton.artikeltrainer-win-button[checked="true"] {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24-off.png");
+}
+
+.artikeltrainer-mac-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png");
+}
+.artikeltrainer-mac-button:active {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24-off.png");
+}
+.artikeltrainer-linux-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png");
+}
+
+/* FIREFOX 4: BROWSER SPECIFIC STYLING */
+.artikeltrainer-win-f4-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png") !important;
+}
+.artikeltrainer-mac-f4-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png") !important;
+}
+/* FIREFOX 4: GENERAL STYLING */
+#artikeltrainer-toolbar-button > .toolbarbutton-icon {
+  margin: 0px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.artikeltrainer-linux-f4-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png") !important;
+}
+#artikeltrainer-linux-f4-button  > .toolbarbutton-icon {
+  margin: 0px !important;
+  width: auto !important;
+  height: auto !important;
+}
+#artikeltrainer-win-f4-button  > .toolbarbutton-icon {
+  margin: 0px !important;
+  width: auto !important;
+  height: auto !important;
+}
+toolbar[iconsize="small"] #artikeltrainer-linux-f4-button {
+  list-style-image: url("chrome://artikeltrainer/skin/artikeltrainer-logo-24.png");
+}
+
+.check-answers {
+	list-style-image: url("chrome://artikeltrainer/skin/check_box.png");
+}
+
+.answer_correct {
+	background-color: green;
+}
+
+.answer_wrong {
+	background-color: red;
+}
